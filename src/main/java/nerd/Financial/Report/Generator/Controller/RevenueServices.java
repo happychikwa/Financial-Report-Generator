@@ -36,6 +36,7 @@ public class RevenueServices {
         revenueRecord.setRevenueSource(source);
         revenueRecord.setAmount(amount);
         revenueRecord.setUpdatedAt(date);
+        revenueRepository.save(revenueRecord);
         return "Record updated";
     }
     public String deleteRevenue(Long recordId){
