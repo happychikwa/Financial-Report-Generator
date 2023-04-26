@@ -15,6 +15,7 @@ public class ExpenseModel {
     private Long expenseId;
     private String date;
     private String description;
+    private Boolean directExpense;
     private float amount;
 
     public ExpenseModel(){}
